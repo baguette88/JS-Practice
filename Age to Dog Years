@@ -1,0 +1,18 @@
+const myAge = 31
+let earlyYears = 2
+let laterYears = myAge - 2
+let myAgeInDogYears = (earlyYears * 10.5) + (laterYears * 4)
+const myName = 'Jeffrey Brown'
+
+console.log(myAge + ' My Age')
+console.log(earlyYears + ' Early Years')
+console.log(laterYears + ' Later Years')
+
+console.log(myAgeInDogYears + ' Dog year conversion')
+
+'Jeffrey Brown'.toLowerCase();
+
+console.log('My name is ' + myName + '. I am ' + myAge + ' years old in human years which is ' +  myAgeInDogYears + ' years old in dog years.');
+
+//age to dog years
+// (X * 10) can be expressed as x *= 10;
