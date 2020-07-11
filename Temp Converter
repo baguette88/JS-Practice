@@ -14,3 +14,7 @@ console.log(fahrenheit+ ' Fahrenheit')
 console.log('The temperature is ' + fahrenheit + ' degrees Fahrenheit.')
 
 console.log(newton+ ' Newton Scale')
+
+//X
+//Math.floor bs Math.ceiling STUDY
+//X
