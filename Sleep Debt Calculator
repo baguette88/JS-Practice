@@ -1,0 +1,55 @@
+const getSleepHours = day => {
+  switch(day){
+    case 'Monday':
+    return 8;
+    break;
+     case 'Tuesday':
+    return 2;
+    break;
+     case 'Wednesday':
+    return 3;
+    break;
+     case 'Thursday':
+    return 4;
+    break;
+     case 'Friday':
+    return 5;
+    break;
+     case 'Saturday':
+    return 6;
+    break;
+     case 'Sunday':
+    return 7;
+    break;
+    default:
+    return "error, invalid day";
+    break;
+    }
+  };
+  /*console.log(getSleepHours('tuesday'));
+    console.log(getSleepHours('wednesday'));
+      console.log(getSleepHours('friday')); */
+      //ABOVE IS FOR TESTING 
+  const getActualSleepHours = () =>
+getSleepHours('Monday') + getSleepHours('Tuesday') + getSleepHours('Wednesday') + getSleepHours('Thursday') + getSleepHours('Friday') + getSleepHours('Saturday') + getSleepHours('Sunday');
+// coudld also use const getActualSleepHours = () => 6 + 7 +8 etc;
+
+const getIdealSleepHours = () => {
+    const idealHours = 8;
+    return idealHours * 7;
+    //modify to change Idea Sleep Hours quota
+};
+//console.log(getIdealSleepHours());
+
+const calculateSleepDebt = () => {
+  const actualSleepHours = getActualSleepHours();
+  const idealSleepHours = getIdealSleepHours();
+  if (actualSleepHours === idealSleepHours) {
+    console.log('Perfect Sleep');
+    } else if (actualSleepHours > idealSleepHours) {
+    console.log('Extra Sleep'); 
+    } else {
+     console.log ('Sleep Debt');
+   }  
+  };
+calculateSleepDebt();
