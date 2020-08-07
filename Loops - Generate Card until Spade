@@ -1,0 +1,9 @@
+const cards = ['diamond', 'spade', 'heart', 'club'];
+
+let currentCard; 
+while (currentCard != 'spade') {
+// chooses target suit 
+  currentCard = cards[Math.floor(Math.random() * 4)];
+  console.log(currentCard);
+}
+// while loop useful when total number of loops required is uncertain
